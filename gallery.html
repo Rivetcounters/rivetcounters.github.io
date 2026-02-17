@@ -1,62 +1,49 @@
-<!DOCTYPE html>
-<html>
+
+     <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Rivetcounters Gallery</title>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f4f4;
-        }
-
-        header {
-            background: #003366;
-            color: white;
-            padding: 15px;
-        }
-
-        header a {
-            color: white;
-            text-decoration: none;
-            margin-right: 15px;
-            font-weight: bold;
+            margin: 20px;
+            background-color: #f7f7f7;
         }
 
         h1 {
-            margin: 0;
+            text-align: center;
         }
 
         .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .gallery img {
             width: 100%;
-            border-radius: 8px;
+            height: auto;
+            border: 1px solid #ccc;
+            background-color: #fff;
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Rivetcounters Photo Gallery</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="https://YOUR-CONTENSIS-SITE-URL">Main Club Website</a>
-    </nav>
-</header>
+    <h1>Gallery</h1>
 
     <div class="gallery">
-    <img src="images/1ff02e537654abbd151d80341c1ed4a0.jpeg.jpg">
-    <img src="images/IMG_4158.jpeg">
-    <img src="images/download.jpg">
-</div>
-</div>
+        <img src="images/screwdriver.jpg" alt="Model engineering screwdriver">
+        <img src="images/lorraine.jpg" alt="Model locomotive Lorraine">
+        <img src="images/artwork.jpg" alt="Model society artwork">
+    </div>
 
 </body>
 </html>
+   
