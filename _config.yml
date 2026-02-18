@@ -1,3 +1,5 @@
-title: Modelling Society 
+title: Cwmbran Modelling Society additional pages 
 description: Model club news and galleries
 theme: minima
+header_pages:
+  - contensis-link.md
