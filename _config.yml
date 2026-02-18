@@ -7,3 +7,8 @@ header_pages:
   
 minima:
   hide_rss: true
+  
+collections:
+  galleries:
+    output: true
+    permalink: /galleries/:name/
