@@ -1,1 +1,10 @@
-_galleries/test-gallery.md
+---
+title: Test Gallery
+year: 2026
+layout: gallery
+images:
+  - file: screwdriver.jpeg
+    alt: Scale model boat
+    caption: Club member's scale power boat
+---
+
