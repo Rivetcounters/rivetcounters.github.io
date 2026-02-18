@@ -1,8 +1,8 @@
 ---
-layout: home
-title: Home
+layout: Galleries
+title: 2026 Gallery
 ---
 
-Welcome to Modelling Society site.
 
-This is now powered by Jekyll.
+
+
