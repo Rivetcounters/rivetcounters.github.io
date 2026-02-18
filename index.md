@@ -1,6 +1,7 @@
 ---
 layout: home
-title: Home
+title: Club Galleries
+
 ---
 
 Welcome to Modelling Society site.
