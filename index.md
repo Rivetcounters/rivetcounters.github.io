@@ -1,9 +1,8 @@
 ---
-layout: home
+layout: default
 title: Club Galleries
-
 ---
 
-Welcome to our Galleries page
+# Club Galleries
 
-
+- [2026 Galleries](/2026/)
