@@ -4,6 +4,6 @@ title: Club Galleries
 
 ---
 
-Welcome to Modelling Society site.
+Welcome to our Galleries page
 
-This is now powered by Jekyll.
+
