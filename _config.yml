@@ -4,3 +4,6 @@ description: Model club news and galleries
 theme: minima
 header_pages:
   - contensis-link.md
+  
+minima:
+  hide_rss: true
