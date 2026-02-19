@@ -3,6 +3,7 @@ layout: default
 ---
 
 <h1>{{ page.title }}</h1>
+
 <p>
   <a href="/2026/" style="text-decoration:none;">
     ← Back to 2026 Galleries
@@ -13,9 +14,57 @@ layout: default
   {{ content }}
 </div>
 
+<!-- Lightbox overlay -->
+<div id="lightbox" style="
+  display:none;
+  position:fixed;
+  z-index:1000;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.9);
+  text-align:center;
+">
+  <span id="close-lightbox" style="
+    position:absolute;
+    top:20px;
+    right:35px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+  ">&times;</span>
+
+  <img id="lightbox-img" style="
+    max-width:90%;
+    max-height:80%;
+    margin-top:60px;
+  ">
+</div>
+
 <style>
   img {
     max-width: 100%;
     height: auto;
+    cursor: pointer;
   }
 </style>
+
+<script>
+  document.querySelectorAll("img").forEach(img => {
+    img.addEventListener("click", function() {
+      document.getElementById("lightbox").style.display = "block";
+      document.getElementById("lightbox-img").src = this.src;
+    });
+  });
+
+  document.getElementById("close-lightbox").addEventListener("click", function() {
+    document.getElementById("lightbox").style.display = "none";
+  });
+
+  document.getElementById("lightbox").addEventListener("click", function(e) {
+    if (e.target === this) {
+      this.style.display = "none";
+    }
+  });
+</script>
