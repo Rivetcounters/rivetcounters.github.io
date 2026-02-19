@@ -67,4 +67,22 @@ layout: default
       this.style.display = "none";
     }
   });
+
+  <script>
+  document.querySelectorAll("img").forEach(img => {
+    img.addEventListener("click", function() {
+      document.getElementById("lightbox").style.display = "block";
+      document.getElementById("lightbox-img").src = this.src;
+    });
+  });
+
+  document.getElementById("close-lightbox").addEventListener("click", function() {
+    document.getElementById("lightbox").style.display = "none";
+  });
+
+  document.getElementById("lightbox").addEventListener("click", function(e) {
+    if (e.target === this) {
+      this.style.display = "none";
+    }
+  });
 </script>
