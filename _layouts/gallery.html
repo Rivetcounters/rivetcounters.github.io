@@ -51,39 +51,30 @@ layout: default
 </style>
 
 <script>
-  document.querySelectorAll("img").forEach(img => {
+  // Open lightbox when clicking any image
+  document.querySelectorAll("img").forEach(function(img) {
     img.addEventListener("click", function() {
       document.getElementById("lightbox").style.display = "block";
       document.getElementById("lightbox-img").src = this.src;
     });
   });
 
+  // Close when clicking the X
   document.getElementById("close-lightbox").addEventListener("click", function() {
     document.getElementById("lightbox").style.display = "none";
   });
 
+  // Close when clicking dark background
   document.getElementById("lightbox").addEventListener("click", function(e) {
     if (e.target === this) {
       this.style.display = "none";
     }
   });
 
-  <script>
-  document.querySelectorAll("img").forEach(img => {
-    img.addEventListener("click", function() {
-      document.getElementById("lightbox").style.display = "block";
-      document.getElementById("lightbox-img").src = this.src;
-    });
-  });
-
-  document.getElementById("close-lightbox").addEventListener("click", function() {
-    document.getElementById("lightbox").style.display = "none";
-  });
-
-  document.getElementById("lightbox").addEventListener("click", function(e) {
-    if (e.target === this) {
-      this.style.display = "none";
+  // Close when pressing ESC
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+      document.getElementById("lightbox").style.display = "none";
     }
   });
-</script>
 </script>
