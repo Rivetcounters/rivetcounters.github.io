@@ -6,8 +6,21 @@ images:
   - file: screwdriver.jpeg
     alt: Scale model boat
     caption: Club member's scale power boat
+  - file: artwork.jpeg
+    alt: Club artwork
+    caption: Club themed artwork display
+  - file: lorraine.jpeg
+    alt: Lorraine model
+    caption: Lorraine's model boat
 ---
 ![Scale model boat](screwdriver.jpeg)
 
 *Club member's scale power boat*
 
+![Club artwork](artwork.jpeg)
+
+*Club themed artwork display*
+
+![Lorraine model](lorraine.jpeg)
+
+*Lorraine's model boat*
