@@ -1,7 +1,7 @@
 ---
 title: Test Gallery
 year: 2026
-layout: gallery
+layout: gallery/test-gallery/
 images:
   - file: screwdriver.jpeg
     alt: Scale model boat
